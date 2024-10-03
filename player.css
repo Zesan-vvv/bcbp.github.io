@@ -1,0 +1,155 @@
+/* Updated styles.css */
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    text-align: center;
+}
+.logo {
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Resetting some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* More professional font */
+    background: linear-gradient(90deg, #006a4e, #f42a41, #006a4e); /* Background gradient */
+    background-size: 400% 400%; /* Larger background size for smoother animation */
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    animation: gradient-animation 10s ease infinite; /* Apply animation */
+}
+
+/* Main container for cards */
+.main-container {
+    margin-top: 170px;
+    align-items: flex-start;
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    align-items: flex-start;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card container */
+.card {
+    width: 149px;
+    height: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background for subtle contrast */
+    border-radius: 15px; /* Softer rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Deeper shadow for better depth */
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.08); /* More pronounced hover effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* Batsman Stats Box */
+.batsman-stats-box {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 30px;
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 1400px;
+    text-align: center;
+    
+    backdrop-filter: blur(10px); /* Blur effect for more focus on content */
+}
+/* Batsman Info */
+.batsman-info {
+    margin-bottom: 20px;
+}
+
+.batsman-info h3 {
+    margin: 0;
+    font-size: 28px; /* Increased size for more prominence */
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); /* Add text shadow for better readability */
+}
+
+.batsman-info p {
+    margin: 5px 0;
+    font-size: 16px; /* Slightly larger for better readability */
+    color: #f0f0f0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for better text clarity */
+}
+
+/* Player Card */
+.player-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Increased margin for spacing */
+}
+
+.player-card-img {
+    width: 150px; /* Slightly larger player card */
+    height: auto;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4)); /* Shadow around player card for focus */
+}
+
+/* Stats Grid */
+.stats-grid {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Increased gap for better spacing */
+}
+
+/* Each Stat Item */
+.stat-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent background for stats */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow to stat items */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.stat-item:hover {
+    transform: scale(1.05); /* Slightly enlarge stat on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.stat-item h4 {
+    margin: 0;
+    font-size: 18px; /* Increase font size for headers */
+    color: #f0f0f0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Subtle text shadow for clarity */
+}
+
+.stat-item p {
+    margin: 5px 0 0 0;
+    font-size: 20px; /* Larger font for emphasis */
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* More pronounced text shadow for numbers */
+}
+
+/* Background animation keyframes */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}

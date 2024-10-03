@@ -1,0 +1,64 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Background with flag colors animation */
+body {
+    background: linear-gradient(90deg, #006a4e, #f42a41, #006a4e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+/* Centering the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Logo styling */
+.logo {
+    width: 150px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+
+/* Headline styling */
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.enter-button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #006a4e;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.enter-button:hover {
+    background-color: #f42a41;
+}
+
+/* Background animation keyframes */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+

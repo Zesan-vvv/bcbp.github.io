@@ -1,0 +1,80 @@
+/* styles.css */
+.headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+.logo {
+    width: 150px; /* Adjust as needed */
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 2.5em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+/* Resetting some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #006a4e, #f42a41, #006a4e); /* Background gradient */
+    background-size: 400% 400%; /* Larger background size for smoother animation */
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    animation: gradient-animation 10s ease infinite; /* Apply animation */
+
+}
+
+/* Main container for cards */
+.main-container {
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between cards */
+    padding: 0; /* Remove padding around container */
+    overflow-x: auto; /* Enables horizontal scrolling if cards overflow */
+    white-space: nowrap; /* Prevents line breaks */
+    align-items: flex-start; /* Align items to the start */
+    padding: 20px; /* Center the container horizontally */
+    flex-wrap: wrap;/* Allow cards to wrap to the next line */
+    justify-content: flex-start; /* Align cards to the left */
+}
+
+/* Card container */
+.card {
+    width: 149px; /* Set a fixed width for the cards */
+    height: 300px; /* Set a fixed height for the cards */
+    overflow: hidden; /* Hides any overflow content */
+    transition: transform 0.3s ease; /* Smooth transition for hover */
+    background-color: transparent; /* Remove white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    display: flex; /* Flexbox for inner content alignment */
+    justify-content: center; /* Center image inside the card */
+    align-items: center; /* Center image inside the card */
+    margin: 0; /* Remove extra margin around cards */
+    padding: 0; /* Remove extra padding inside cards */
+}
+
+/* Player card image */
+.player-card {
+    width: 100%; /* Make the image take full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures no extra space at the bottom of the image */
+}
+
+/* Hover effect */
+.card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+}
+/* Background animation keyframes */
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
