@@ -1,4 +1,4 @@
-/* styles.css */
+/* Center the logo and title vertically and horizontally */
 .headline {
     display: flex;
     flex-direction: column;
@@ -6,6 +6,7 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
+    margin-top: 100px; /* Adjusted to avoid overlap with notice bar */
 }
 .logo {
     width: 150px; /* Adjust as needed */
@@ -16,7 +17,6 @@ h1 {
     color: #fff;
     margin-bottom: 20px;
 }
-
 
 /* Resetting some default styles */
 body {
@@ -29,7 +29,7 @@ body {
     align-items: center;
     min-height: 100vh;
     animation: gradient-animation 10s ease infinite; /* Apply animation */
-
+    flex-direction: column; /* Column layout to allow stacking */
 }
 
 /* Main container for cards */
@@ -42,7 +42,7 @@ body {
     align-items: flex-start; /* Align items to the start */
     padding: 20px; /* Center the container horizontally */
     flex-wrap: wrap;/* Allow cards to wrap to the next line */
-    justify-content: flex-start; /* Align cards to the left */
+    justify-content: center; /* Align cards to the center for better balance */
 }
 
 /* Card container */
@@ -72,6 +72,7 @@ body {
 .card:hover {
     transform: scale(1.05); /* Slightly enlarges the card on hover */
 }
+
 /* Notice Bar */
 .notice-bar {
     background-color: #333;
@@ -83,6 +84,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000; /* Ensure it's on top of other elements */
+    text-align: center; /* Center the notice text */
 }
 
 .scrolling-text {
@@ -99,6 +101,7 @@ body {
         transform: translateX(-100%);
     }
 }
+
 /* Background animation keyframes */
 @keyframes gradient-animation {
     0% { background-position: 0% 50%; }
