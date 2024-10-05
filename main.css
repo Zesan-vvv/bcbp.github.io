@@ -78,8 +78,11 @@ body {
     color: #fff;
     padding: 10px 0;
     overflow: hidden;
-    position: relative;
     white-space: nowrap;
+    position: fixed; /* Make it stay on top */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top of other elements */
 }
 
 .scrolling-text {
@@ -87,7 +90,7 @@ body {
     padding-left: 100%;
     animation: scroll 10s linear infinite;
 }
-/*Notice Bar Keyframes*/
+
 @keyframes scroll {
     from {
         transform: translateX(100%);
